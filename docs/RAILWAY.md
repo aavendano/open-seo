@@ -40,7 +40,7 @@ Do not use the marketplace template (`Lukem121/openseo`) for this setup — that
 
 - **Custom domain** on OpenSEO (not Auth Gate)
 - **RAM:** 4 GB+ recommended (first start runs migrations + Vite build)
-- **Healthcheck:** `/` with timeout **300 s** (`railway.toml` sets this)
+- **Healthcheck:** `/api/health` with timeout **300 s** (`railway.toml` sets this). Railway probes with Host `healthcheck.railway.app`; `vite.config.ts` allows that hostname.
 - **Start command:** `sh docker-entrypoint.sh` (default from `railway.toml`)
 
 ## First deploy
