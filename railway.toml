@@ -6,7 +6,7 @@ builder = "dockerfile"
 dockerfilePath = "Dockerfile.selfhost"
 
 [deploy]
-healthcheckPath = "/"
+healthcheckPath = "/api/health"
 healthcheckTimeout = 300
 restartPolicyType = "on_failure"
 startCommand = "sh docker-entrypoint.sh"
